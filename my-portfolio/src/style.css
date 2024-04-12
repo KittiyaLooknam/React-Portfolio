@@ -1,0 +1,26 @@
+*{
+  background-color: black;
+}
+
+
+.container {
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as needed */
+    font-size: 250%;
+    align-items: center; /* Center vertically */
+    justify-content: left; /* Center*/
+    display: flex;
+    width: 50%;
+    margin: auto;
+   
+}
+
+
+#imgwelcome {
+    justify-content: center;
+    display: flex;
+    width: 50%;
+    margin: 3% auto;
+    padding:  3% ;
+}

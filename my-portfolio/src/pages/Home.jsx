@@ -1,18 +1,35 @@
+import React from 'react';
+import '../style.css'; // Import the CSS file
+import backgroundImage from '../assets/photo1.png'; // Import the image file
+import FancyText from '@carefully-coded/react-text-gradient';
+
 export default function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+    <div className="section" id="home" >
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 text-left">
+            <FancyText
+              gradient={{ from: '#F858E0', to: '#77156C', type: 'linear' }}
+              animateTo={{ from: '#6DEDD0', to: '#7AE23A' }}
+              animateDuration={2000}>
+              Hello, I'm Kittiya <br></br>
+            </FancyText>
+            <div>
+              <FancyText gradient={{ from: '#818CF8', to: '#5B21B6' }}>
+                studying coding a Full Stack Developer
+                <br></br> from boot camp at GWU. Washington, DC
+              </FancyText>
+            </div>
+            {/* <div className="col-md-6">
+              <img src={backgroundImage} alt="Aside" style={{ width: '100%', height: 'auto' }} />
+            </div> */}
+          </div>
+          <div className="col-md-6" id="imgwelcome" style={{ float: 'right' }}>
+              <img src={backgroundImage} alt="Aside" style={{ width: '50%', height: '100%' }} />
+            </div>
+        </div>
+      </div>
     </div>
   );
+}
