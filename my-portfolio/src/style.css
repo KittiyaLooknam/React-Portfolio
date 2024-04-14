@@ -93,3 +93,33 @@ button:hover {
 .text-white {
   color: white;
 }
+
+
+
+/*  Pottfolio */ 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 360px); /* Three columns each with 360px width */
+  gap: 20px;
+  justify-content: center; /* Center the grid horizontally */
+}
+
+.project-card {
+  width: 360px; /* Set width to 360px */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.project-card img {
+  width: 100%; /* Ensure the image fills the card width */
+  height: auto;
+}
+
+.project-card h3 {
+  margin-top: 10px;
+}
+
+.project-card p {
+  margin-top: 5px;
+}
