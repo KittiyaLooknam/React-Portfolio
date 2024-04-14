@@ -2,6 +2,7 @@
 import { Outlet } from 'react-router-dom'; // Page the  user is currently on.
 import Nav from './components/NavTabs';
 
+
 function App() {
   // The Outlet component will conditionally swap between the different pages according to the URL
   return (
@@ -11,6 +12,7 @@ function App() {
         <Outlet />
       </main>
     </>
+    
   );
 }
 
