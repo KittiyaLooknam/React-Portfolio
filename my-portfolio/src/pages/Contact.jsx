@@ -53,27 +53,8 @@ export default function Contact() {
           <button className="btn btn-primary bg-info rounded border-info ml-1 mb-3" type="submit" id="email-button">Send Email</button>
         </form>
         <div className='formcontainer' id="formcontainer1">
-      {/* Links */}
-      <div className="col-md-3 icon" id="iconimg" >
-        <div className='icon1' id="icon1">
-          <a href="https://github.com/KittiyaLooknam?tab=repositories" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithubSquare} className="mr-2" size="2x" />
-          </a>
-        </div>
-        <br></br>
-        <div className='icon2' id="icon2">
-          <a href="https://www.linkedin.com/in/kittiya-goldberg-59053496/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} className="mr-2" size="2x" />
-          </a>
-        </div>
-        <br></br>
-        <div className='icon3' id="icon3">
-          <a href="mailto:kittiya.goldberg1@gmail.com">
-            <FontAwesomeIcon icon={faEnvelope} className="mr-2" size="2x" />
-          </a>
-        </div>
       </div>
       </div>
-    </div>
+  
   );
 }
