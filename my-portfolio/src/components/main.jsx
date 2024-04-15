@@ -1,5 +1,5 @@
 import React from "react";
-// import "./Main.css";
+import '../style.css';
 
 const Main = ({circleImage,circleImageAlt,content,title}) => {
   return (
