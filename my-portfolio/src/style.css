@@ -118,6 +118,11 @@ button:hover {
   margin-bottom: 10px;
 }
 
+.icon {
+  display: flex;
+  justify-content: center; /* Horizontally center the icon */
+  align-items: center; /* Vertically center the icon */
+}
 
 /*  Pottfolio */
 .project-grid {

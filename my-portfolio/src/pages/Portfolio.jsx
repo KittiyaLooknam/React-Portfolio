@@ -61,7 +61,7 @@ export default function Portfolio() {
 
   return (
     <div>
-      <h1 style={{ color: 'blue', textAlign: 'center' }}>Portfolio</h1>
+      <h5 style={{ color: 'blue', textAlign: 'center' }}>Portfolio</h5>
       <p style={{ textAlign: 'center' }}>Please click on a project card to view the project details:</p>
       <div className="project-grid">
         {projects.map(project => (
