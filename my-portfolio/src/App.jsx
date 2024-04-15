@@ -1,24 +1,49 @@
-// Bringing in the required import from 'react-router-dom'
-import { Outlet } from 'react-router-dom'; // Page the  user is currently on.
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Outlet } from 'react-router-dom';
 import Nav from './components/NavTabs';
 import Footer from './pages/Footer';
 import React from "react";
 
-
 function App() {
-  // The Outlet component will conditionally swap between the different pages according to the URL
   return (
     <>
-    <div className='App'>
-      <Nav />
-      <main className="mx-3">
-        <Outlet />
+      <div className='formcontainer' id="formcontainer1">
+        {/* Links */}
+        <div className="col-md-3 icon" id="iconimg">
+          <div className='icon1' id="icon1">
+            <a href="https://github.com/KittiyaLooknam?tab=repositories" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithubSquare} className="mr-2" size="2x" />
+              {/* GitHub */}
+            </a>
+          </div>
+          <br></br>
+          <div className='icon2' id="icon2">
+            <a href="https://www.linkedin.com/in/kittiya-goldberg-59053496/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} className="mr-2" size="2x" />
+              {/* LinkedIn */}
+            </a>
+          </div>
+          <br></br>
+          <div className='icon3' id="icon3">
+            <a href="mailto:kittiya.goldberg1@gmail.com">
+              <FontAwesomeIcon icon={faEnvelope} className="mr-2" size="2x" />
+              {/* Email */}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className='App'>
+        <Nav />
+        <main className="mx-3">
+          <Outlet />
         </main>
-      <div className="footer pt-1 mt-3">
-        <Footer />
+        <div className="footer pt-1 mt-3">
+          <Footer />
+        </div>
       </div>
-      </div>
-      </>    
+    </>
   );
 }
 

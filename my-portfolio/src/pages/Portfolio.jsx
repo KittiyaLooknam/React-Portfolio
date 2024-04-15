@@ -36,7 +36,6 @@ export default function Portfolio() {
       image: Project4Img,
       title: 'Note-Taker',
       description: 'Description of note-taking app that allows the user to create, save, and delete text-based notes.',
-      githubLink: "https://github.com/KittiyaLooknam/Note-Taker.git",
     },
     {
       id: 5,
