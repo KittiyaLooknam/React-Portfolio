@@ -110,17 +110,6 @@ button:hover {
   background-color: #ede6e6;
 }
 
-/*  footer */
-.footer {
-  padding: auto;
-  background-color: #000000;
-  color: white;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-bottom: #007bff;
-  border-top: red;
-}
 
 .container-ft {
   background-color: #000000;
