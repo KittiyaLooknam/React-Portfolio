@@ -36,6 +36,8 @@
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  justify-items: end;
+  
 }
 
 label {
@@ -65,8 +67,12 @@ button:hover {
   background-color: #0056b3;
 }
 
+
+
 #iconimg {
- padding: 0%
+ padding: 15%;
+ 
+ 
  }
 
 #iconimg img {
@@ -86,7 +92,13 @@ button:hover {
   border: 1px solid #0056b3;
 
 }
+#message {
+  background-color: #ede6e6;
 
+}
+#subject {
+  background-color: #ede6e6;
+}
 
 /*  footer */
 
@@ -122,4 +134,22 @@ button:hover {
 
 .project-card p {
   margin-top: 5px;
+}
+
+/* App.css */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1; /* This makes the main content area grow to fill remaining space */
+}
+
+.footer {
+  flex-shrink: 0; /* Prevent footer from shrinking */
 }
