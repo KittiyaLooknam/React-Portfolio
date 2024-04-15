@@ -11,7 +11,7 @@ function Footer() {
     <div className='formcontainer' id="formcontainer1">
       {/* Footer title */}
       {/* Links */}
-      <div className="icons" id="footertitle">
+      <div className="icons" id="icons" >
         <div className="icon" id="iconimg">
           <div className='icon1' id="icon1">
             <a href="https://github.com/KittiyaLooknam?tab=repositories" target="_blank" rel="noopener noreferrer">
@@ -37,15 +37,14 @@ function Footer() {
         {/* Footer */}
         <div>
         </div>
-
-        <footer className="footer pt-1 mt-3" style={{ color: "white", borderTop: "1px solid white" }}>
-          <div className="container-ft">
-            <div className="container-fluid text-center">
-              <span>&#169; Copyright 2024 KITTIYA</span>
-            </div>
-          </div>
-        </footer>
       </div>
+      <footer className="footer pt-1 mt-3" style={{ color: "white", borderTop: "1px solid white" }}>
+        <div className="container-ft">
+          <div className="container-fluid text-center">
+            <span>&#169; Copyright 2024 KITTIYA</span>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

@@ -55,23 +55,18 @@ export default function Portfolio() {
     },
   ];
 
-  const handleClick = (url) => {
-    window.open(url, '_blank');
-  };
-
   return (
     <div>
-      <h5 style={{ color: 'blue', textAlign: 'center' }}>Portfolio</h5>
-      <p style={{ textAlign: 'center' }}>Please click on a project card to view the project details:</p>
+      <h1 style={{ color: 'blue' }}>Portfolio</h1>
+      <p>Please click on a project card to view the project details:</p>
       <div className="project-grid">
         {projects.map(project => (
           <div key={project.id} className="project-card">
             <a href={project.url} onClick={() => handleClick(project.url)} target="_blank" rel="noopener noreferrer">
               <img src={project.image} alt={project.title} />
             </a>
-            <h3 style={{ color: 'blue', textAlign: 'center' }}>{project.title}</h3>
-            <p style={{ color: 'white', textAlign: 'center' }}>{project.description}</p>
-            <button onClick={() => handleClick(project.url)} className="view-button">View Repository</button>
+            <h3 style={{ color: project.id === 1 ? 'blue' : 'white' }}>{project.title}</h3>
+            <p style={{ color: 'white' }}>{project.description}</p>
           </div>
         ))}
       </div>
