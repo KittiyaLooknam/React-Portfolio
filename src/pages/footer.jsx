@@ -38,13 +38,13 @@ function Footer() {
         <div>
         </div>
       </div>
-      <footer className="footer pt-1 mt-3" style={{ color: "white", borderTop: "1px solid white" }}>
+      <Footer className="footer pt-1 mt-3" style={{ color: "white", borderTop: "1px solid white" }}>
         <div className="container-ft">
           <div className="container-fluid text-center">
             <span>&#169; Copyright 2024 KITTIYA</span>
           </div>
         </div>
-      </footer>
+      </Footer>
     </div>
   );
 }
