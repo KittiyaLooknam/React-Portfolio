@@ -25,7 +25,7 @@ export default function Home() {
             <div>
               <FancyText gradient={{ from: '#818CF8', to: '#5B21B6' }}>
                 studying to be a Full Stack Developer
-                through the boot camp program at GWU. Washington, DC
+                through boot camp at GWU. Washington, DC
               </FancyText>
             </div>
             {/* <div className="col-md-6">
