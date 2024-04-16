@@ -94,11 +94,11 @@ button:hover {
 }
 
 #iconimg img:hover {
-  border: 1px solid #007bff;
+  border: 1px solid #251463;
 }
 
 #iconimg img:active {
-  border: 1px solid #0056b3;
+  border: 1px solid #3223d6;
 
 }
 
@@ -142,6 +142,10 @@ button:hover {
 }
 
 /*  Pottfolio */
+#hearderPortfolio {
+  margin:25px;
+
+}
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 360px);
@@ -160,16 +164,15 @@ button:hover {
 }
 
 .project-card img {
-  width: 100%;
+  
   /* Ensure the image fills the card width */
   height: auto;
- 
+  margin:0 64px;
+  
 }
-.project-card {
-  transform: scale(1.2);
-}
+
 .project-card h3 {
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .project-card p {
@@ -196,4 +199,8 @@ body {
 .footer {
   flex-shrink: 0;
   /* Prevent footer from shrinking */
+}
+
+#container-main1 {
+  margin: 25pm;
 }

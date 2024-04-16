@@ -29,7 +29,7 @@ export default function Portfolio() {
       id: 3,
       image: Project3Img,
       title: 'SVG logo',
-      description: 'Description ofSVG logo Markernode application that generates an SVG logo with your choice of shape (circle, square, rectangle) and color text. Limit with 3 characters and text color. following chosen using color of keyword or hexadecimal numbers..',
+      description: 'Description ofSVG logo Markernode application that generates an SVG logo with your choice of shape (circle, square, rectangle) and color text. Limit with 3 characters and text color. following chosen using color of keyword or hexadecimal numbers.',
       url: 'https://github.com/KittiyaLooknam/SVG-Logo-Maker.git'
     },
     {
@@ -55,18 +55,24 @@ export default function Portfolio() {
     },
   ];
 
+  const handleClick = (url) => {
+    window.open(url, '_blank');
+  };
+
   return (
     <div>
-      <h1 style={{ color: 'blue' }}>Portfolio</h1>
-      <p>Please click on a project card to view the project details:</p>
+      <h1 className="hearderPortfolio" id="hearderPortfolio"style={{ color: 'blue' }}>Portfolio</h1>
       <div className="project-grid">
         {projects.map(project => (
           <div key={project.id} className="project-card">
-            <a href={project.url} onClick={() => handleClick(project.url)} target="_blank" rel="noopener noreferrer">
-              <img src={project.image} alt={project.title} />
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <div > 
+              <img className="imgprofoilo" id="imgprofoilo"src={project.image} alt={project.title} style={{ clipPath: 'circle(50%)', width: '200px', height: '200px' }} />
+              </div>
             </a>
-            <h3 style={{ color: project.id === 1 ? 'blue' : 'white' }}>{project.title}</h3>
+            <h3 style={{ color: 'blue' }}>{project.title}</h3>
             <p style={{ color: 'white' }}>{project.description}</p>
+            <button onClick={() => handleClick(project.url)} className="view-button">View Repository</button>
           </div>
         ))}
       </div>
