@@ -14,7 +14,7 @@ This is my portfolio website built with React.js.
 
 - Run `npm start`
 
-
+- Link to deploys [dypl](https://frolicking-basbousa-5ba9e1.netlify.app/)
 
 ## Screenshot
 
