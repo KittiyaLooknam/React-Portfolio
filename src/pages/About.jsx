@@ -14,7 +14,9 @@ export default function About() {
           </FancyText>
           <div className="col-md-12" id="container-main1">
             <p style={{ fontSize: '25px', float: 'right', color: 'white'  }}>
-              Welcome to my portfolio! My name is Kittiya Goldberg. I'm currently studying at the George Washington University coding bootcamp program in Full Stack Web Development. I have a degree in Fisheries Science and worked in Thailand for 2 years before moving to the USA as an aupair. Since being in the USA, I worked in child care until 2023. I became interested in web development after watching tutorials on YouTube.
+              Welcome to my portfolio! My name is Kittiya Goldberg.  I earned my degree in Fisheries Science in 2012 and worked in Thailand for 2 years before moving to USA as an Aupair in 2014. Since being in the USA, I had the pleasure of working in child care until 2023. I've always had passion in life for fashion and design! After watching a few web development tutorials on YouTube I became interested in learning. I'm currently studying at the George Washington University coding bootcamp program in Full Stack Web Development. I've designed a wide range of websites and applications using HTML, CSS, JavaScript, React, Node.js, Express.js, and MongoDB. <br></br> <br></br>
+              
+              My goal now is to land a job as a web developer. I embrace the challenge of learning new things and apply myself when new opportunities to grow arise. As a person, I'm diligent and I'm always looking for ways to improve my skills and knowledge. I adapt quickly and work well in both group and individual settings. I consider myself a team player that will give extra effort to set an example for others to follow.  
             </p>
           </div>
         </div>
