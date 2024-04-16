@@ -7,6 +7,7 @@ import Project4Img from '../assets/Note-Taker.png';
 import Project5Img from '../assets/password-Generator.png';
 import Project6Img from '../assets/workday-sceduler.png';
 import '../style.css'; // Import the CSS file
+import FancyText from '@carefully-coded/react-text-gradient';
 
 export default function Portfolio() {
   // Define an array of project objects containing image and project details
@@ -61,7 +62,13 @@ export default function Portfolio() {
 
   return (
     <div>
-      <h1 className="hearderPortfolio" id="hearderPortfolio"style={{ color: 'blue' }}>Portfolio</h1>
+      <FancyText className="hearderPortfolio" id="hearderPortfolio"
+            gradient={{ from: '#ff1493', to: '#00bfff', type: 'linear' }}
+            animateTo={{ from: '#6DEDD0', to: '#7AE23A' }}
+            animateDuration={2000}  style={{ fontSize: '50px', fontFamily: 'serif' }}>
+            Portfolio
+          </FancyText>
+      
       <div className="project-grid">
         {projects.map(project => (
           <div key={project.id} className="project-card">
