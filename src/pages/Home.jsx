@@ -19,11 +19,11 @@ export default function Home() {
              I'm 
             </FancyText>
             👋 <br></br>
-            <FancyText
+            <FancyText className='name' id="name"
               gradient={{ from: '#F858E0', to: '#77156C', type: 'linear' }}
               animateTo={{ from: '#6DEDD0', to: '#7AE23A' }}
               animateDuration={2000}>
-             Kittiya Goldberg
+           KITTIYA GOLDBERG
             </FancyText>
             <FancyText
               gradient={{ from: '#F858E0', to: '#77156C', type: 'linear' }}
