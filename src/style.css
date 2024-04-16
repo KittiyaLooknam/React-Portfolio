@@ -28,6 +28,7 @@
   padding: 3%;
   border-radius: 5px;
   border: 10px solid #ccc;
+  flo
 
 }
 
@@ -143,9 +144,10 @@ button:hover {
 
 /*  Pottfolio */
 #hearderPortfolio {
-  margin:25px;
+  margin: 25px;
 
 }
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 360px);
@@ -158,17 +160,17 @@ button:hover {
 .project-card {
   width: 360px;
   /* Set width to 360px */
-  border: 1px solid #ccc;
+  border: 1px solid #050505;
   border-radius: 5px;
   padding: 10px;
 }
 
 .project-card img {
-  
+
   /* Ensure the image fills the card width */
   height: auto;
-  margin:0 64px;
-  
+  margin: 0 64px;
+
 }
 
 .project-card h3 {
@@ -204,3 +206,16 @@ body {
 #container-main1 {
   margin: 25pm;
 }
+
+
+/* About me */
+#container-main1 p {
+  text-align: justify;
+  text-justify: auto;
+  margin: 2px;
+  font-family: cursive;
+  text-indent: 50px;
+
+
+}
+
