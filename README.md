@@ -18,8 +18,6 @@ This is my portfolio website built with React.js.
 
 ## Screenshot
 
-<<<<<<< HEAD
-=======
 ![image](https://github.com/KittiyaLooknam/React-Portfolio/assets/149645563/1cf66f1f-e37c-4cef-b8ee-33bdd244a263)
 
 ![image](https://github.com/KittiyaLooknam/React-Portfolio/assets/149645563/435dac20-65fa-43c6-9d1b-50d374bace79)
@@ -40,8 +38,6 @@ Thank you to Louis Delia for helping give me advice.
 - [React-Icons](https://react-icons.github.io/react-icons/)
 - [React-Scroll](https://www.npmjs.com/package/react-scroll)
 - https://www.w3schools.com/css/css_text.asp 
-<<<<<<< HEAD
 - https://developer.mozilla.org/en-US/docs/Web/CSS/font-family
-=======
 - https://developer.mozilla.org/en-US/docs/Web/CSS/font-family
 >>>>>>> 351baa233b5d2a841bfe9726027d2960b9f5a605
