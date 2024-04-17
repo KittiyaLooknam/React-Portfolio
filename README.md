@@ -25,7 +25,7 @@ This is my portfolio website built with React.js.
 ![image](https://github.com/KittiyaLooknam/React-Portfolio/assets/149645563/bc7cc732-b20e-4149-879e-bcf7e782da90)
 
 ![image](https://github.com/KittiyaLooknam/React-Portfolio/assets/149645563/d0a0d1d8-8b29-4c66-a3eb-907e91a80207)
->>>>>>> 351baa233b5d2a841bfe9726027d2960b9f5a605
+
 
 
 ## Credits 
