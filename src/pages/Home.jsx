@@ -11,7 +11,7 @@ export default function Home() {
           <img src={backgroundImage} alt="Aside" style={{ width: '100%', height: '100%' }} />
         </div>
         <div className="row">
-          <div className="col-md-6 text-left" className="textcontaner" id="textcontaner1">
+        <div className="col-md-6 text-left textcontaner" id="textcontaner1">
             <FancyText
               gradient={{ from: '#F858E0', to: '#77156C', type: 'linear' }}
               animateTo={{ from: '#6DEDD0', to: '#7AE23A' }}
