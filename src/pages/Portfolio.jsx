@@ -4,7 +4,7 @@ import Project1Img from '../assets/Brewery-Search.png';
 import Project2Img from '../assets/crudit-screenshot.png';
 import Project3Img from '../assets/logo.svg.png';
 import Project4Img from '../assets/Note-Taker.png';
-import Project5Img from '../assets/password-Generator.png';
+import Project5Img from '../assets/Password-Generator.png';
 import Project6Img from '../assets/workday-sceduler.png';
 import '../style.css'; // Import the CSS file
 import FancyText from '@carefully-coded/react-text-gradient';
