@@ -1,128 +1,96 @@
-* {
-  background-color: black;
-}
+/* style.css */
 
-
+/* Container and Section Styling */
 .container {
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  /* Adjust the height as needed */
-  font-size: 250%;
-  align-items: center;
-  /* Center vertically */
-  justify-content: left;
-  /* Center*/
   display: flex;
-  width: 50%;
-  margin: auto;
-
-}
-
-
-#imgwelcome {
+  flex-wrap: wrap;
   justify-content: center;
-  display: flex;
-  width: 50%;
-  margin: 3% auto;
-  padding: 3%;
-  border-radius: 5px;
-  border: 10px solid #ccc;
-  flo
-
-}
-#name {
-
-}
-
-
-/* Contact.jsx */
-.contactcontainer {
-  max-width: 500px;
-  margin: 0 auto;
+  align-items: center;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  justify-items: end;
-
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
+.section {
+  padding: 40px 0;
 }
 
-input[type="text"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+/* Image Styling */
+#imgwelcome img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 3px;
-  cursor: pointer;
+/* Text Container Styling */
+.textcontaner {
+  padding: 20px;
 }
 
-button:hover {
-  background-color: #0056b3;
+/* Fancy Text Styling */
+#textcontaner1 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#name {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 
+/* style.css */
 
-#iconimg {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+/* Main Container Styling */
+.container-main {
   display: flex;
-  justify-content: space-between;
-  margin: auto;
-
-
-
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
 }
 
-#iconimg img {
+/* Text Container Styling */
+#container-main1 {
+  padding: 20px;
+}
+
+/* Fancy Text Styling */
+.content {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+#container-main1 p {
+  font-size: 20px;
+  color: white;
+  text-indent: 25px;
+  line-height: 1.6;
+}
+
+/* Image Styling */
+#imgwelcome img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 70%;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#iconimg img:hover {
-  border: 1px solid #251463;
+/* style.css */
+
+/* Footer Container Styling */
+.formcontainer {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  border-top: 1px solid #ffffff;
+  text-align: center;
+  margin-top: 40px;
 }
 
-#iconimg img:active {
-  border: 1px solid #3223d6;
-
-}
-
-#message {
-  background-color: #ede6e6;
-
-}
-
-#subject {
-  background-color: #ede6e6;
-}
-
-
-.container-ft {
-  background-color: #000000;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
+/* Icons Container Styling */
 .icon {
   display: flex;
   justify-content: center;
@@ -132,93 +100,156 @@ button:hover {
 }
 
 
-
-/* #formcontainer1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-#icons {
-  display: flex;
-  justify-content: center;
-
+/* Individual Icon Styling */
+.icon a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s ease;
 }
 
-/*  Pottfolio */
-#hearderPortfolio {
-  margin: 25px;
-
+.icon a:hover {
+  transform: scale(1.1);
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 360px);
-  /* Three columns each with 360px width */
-  gap: 20px;
-  justify-content: center;
-  /* Center the grid horizontally */
-}
-
-.project-card {
-  width: 360px;
-  /* Set width to 360px */
-  border: 1px solid #050505;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.project-card img {
-
-  /* Ensure the image fills the card width */
-  height: auto;
-  margin: 0 64px;
-
-}
-
-.project-card h3 {
-  margin-top: 25px;
-}
-
-.project-card p {
-  margin-top: 5px;
-}
-
-/* App.css */
-html,
-body,
-#root {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-content {
-  flex: 1;
-  /* This makes the main content area grow to fill remaining space */
-}
-
+/* Footer Text Styling */
 .footer {
-  flex-shrink: 0;
-  /* Prevent footer from shrinking */
+  padding-top: 10px;
+  margin-top: 30px;
 }
 
-#container-main1 {
-  margin: 25pm;
+.container-ft {
+  font-size: 14px;
+  color: white;
 }
 
+/* style.css */
 
-/* About me */
-#container-main1 p {
-  text-align: justify;
-  text-justify: auto;
-  margin: 2px;
-  font-family: cursive;
-  text-indent: 50px;
-
-
+/* Portfolio Header Styling */
+.hearderPortfolio {
+  text-align: center;
+  margin: 40px 0;
+  font-family: 'serif';
+  font-size: 50px;
 }
 
+/* Project Grid Styling */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Project Card Styling */
+.project-card {
+  background-color: #282c34;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Project Image Styling */
+.imgprofoilo {
+  clip-path: circle(50%);
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+/* Project Title Styling */
+.project-card h3 {
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+/* Project Description Styling */
+.project-card p {
+  color: white;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* View Button Styling */
+.view-button {
+  background-color: #ff1493;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-button:hover {
+  background-color: #ff69b4;
+}
+
+/* style.css */
+
+/* Contact Container Styling */
+.contactcontainer {
+  background-color: #282c34;
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Fancy Text Styling */
+.contactcontainer FancyText {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+/* Form Label Styling */
+.contactcontainer label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  text-align: left;
+}
+
+/* Form Input and Textarea Styling */
+.contactcontainer input,
+.contactcontainer textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Form Button Styling */
+#email-button {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#email-button:hover {
+  background-color: #138496;
+}
+
+/* General Styling */
+.contactcontainer .formcontainer {
+  margin-top: 20px;
+}

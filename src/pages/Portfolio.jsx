@@ -74,7 +74,7 @@ export default function Portfolio() {
           <div key={project.id} className="project-card">
             <a href={project.url} target="_blank" rel="noopener noreferrer">
               <div > 
-              <img className="imgprofoilo" id="imgprofoilo"src={project.image} alt={project.title} style={{ clipPath: 'circle(50%)', width: '200px', height: '200px' }} />
+              <img className="imgprofoilo" id="imgprofoilo"src={project.image} alt={project.title} />
               </div>
             </a>
             <h3 style={{ color: 'blue' }}>{project.title}</h3>
