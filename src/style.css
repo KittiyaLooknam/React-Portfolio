@@ -1,38 +1,55 @@
-/* style.css */
 /* Reset and Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #282c34;
+}
+
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
 /* Container and Section Styling */
-.container {
+.container, .container-main, .contactcontainer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+
+.section, .container-main, .contactcontainer {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
 }
 
 .section {
   padding: 40px 0;
 }
 
-/* Image Styling */
-#imgwelcome img {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 /* Text Container Styling */
-.textcontaner {
+.textcontaner, #container-main1 {
   padding: 20px;
 }
 
+/* Image Styling */
+#imgwelcome img, .imgprofoilo {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+}
+
+.imgprofoilo {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
 /* Fancy Text Styling */
-#textcontaner1 {
+#textcontaner1, .content {
   font-size: 20px;
   line-height: 1.5;
 }
@@ -42,96 +59,6 @@
   font-weight: bold;
 }
 
-
-/* style.css */
-
-/* Main Container Styling */
-.container-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-color: #282c34;
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-top: 40px;
-}
-
-/* Text Container Styling */
-#container-main1 {
-  padding: 20px;
-}
-
-/* Fancy Text Styling */
-.content {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-/* Paragraph Styling */
-#container-main1 p {
-  font-size: 20px;
-  color: white;
-  text-indent: 25px;
-  line-height: 1.6;
-}
-
-/* Image Styling */
-#imgwelcome img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* style.css */
-
-/* Footer Container Styling */
-.formcontainer {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
-  border-top: 1px solid #ffffff;
-  text-align: center;
-  margin-top: 40px;
-}
-
-/* Icons Container Styling */
-.icon {
-  display: flex;
-  justify-content: center;
-  /* Horizontally center the icon */
-  align-items: center;
-  /* Vertically center the icon */
-}
-
-
-/* Individual Icon Styling */
-.icon a {
-  color: white;
-  text-decoration: none;
-  transition: transform 0.2s ease;
-}
-
-.icon a:hover {
-  transform: scale(1.1);
-}
-
-/* Footer Text Styling */
-.footer {
-  padding-top: 10px;
-  margin-top: 30px;
-}
-
-.container-ft {
-  font-size: 14px;
-  color: white;
-}
-
-/* style.css */
-
-/* Portfolio Header Styling */
 .hearderPortfolio {
   text-align: center;
   margin: 40px 0;
@@ -139,21 +66,28 @@
   font-size: 50px;
 }
 
-/* Project Grid Styling */
+/* Paragraph Styling */
+#container-main1 p, .project-card p {
+  font-size: 20px;
+  text-indent: 25px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Project Grid and Card Styling */
 .project-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+  justify-content: center;
 }
 
-/* Project Card Styling */
 .project-card {
   background-color: #282c34;
-  color: white;
   border-radius: 10px;
   padding: 20px;
-  width: 300px;
+  flex-basis: calc(25% - 20px); /* 25% width for 4 cards per row with 20px gap */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: transform 0.3s;
@@ -163,28 +97,11 @@
   transform: translateY(-5px);
 }
 
-/* Project Image Styling */
-.imgprofoilo {
- 
-  width: 200px;
-  height: 200px;
-  margin-bottom: 20px;
-}
-
-/* Project Title Styling */
 .project-card h3 {
   color: #00bfff;
   margin-bottom: 10px;
 }
 
-/* Project Description Styling */
-.project-card p {
-  color: white;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-/* View Button Styling */
 .view-button {
   background-color: #ff1493;
   color: white;
@@ -199,49 +116,104 @@
   background-color: #ff69b4;
 }
 
-/* style.css */
+/* Footer Container Styling */
+.formcontainer {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  border-top: 1px solid #ffffff;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.icon a:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  padding-top: 10px;
+  margin-top: 30px;
+}
+
+.container-ft {
+  font-size: 14px;
+}
 
 /* Contact Container Styling */
-.contactcontainer {
+.contact {
+  padding: 50px 0;
   background-color: #282c34;
-  padding: 40px;
-  border-radius: 10px;
-  color: white;
-  width: 100%;
-  max-width: 600px;
+}
+
+#contact-me {
+  max-width: 800px;
   margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Fancy Text Styling */
-.contactcontainer FancyText {
-  font-size: 25px;
-  margin-bottom: 20px;
+form {
+  display: grid;
+  gap: 20px;
 }
 
-/* Form Label Styling */
-.contactcontainer label {
-  display: block;
-  margin-bottom: 5px;
-  color: white;
-  text-align: left;
+label {
+  font-weight: bold;
 }
 
-/* Form Input and Textarea Styling */
-.contactcontainer input,
-.contactcontainer textarea {
+input[type="text"],
+input[type="email"],
+textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  box-sizing: border-box;
   font-size: 16px;
-  background-color: azure;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-/* Form Button Styling */
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+}
+
 #email-button {
   background-color: #17a2b8;
   color: white;
@@ -254,9 +226,4 @@
 
 #email-button:hover {
   background-color: #138496;
-}
-
-/* General Styling */
-.contactcontainer .formcontainer {
-  margin-top: 20px;
 }

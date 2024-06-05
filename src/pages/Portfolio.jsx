@@ -34,7 +34,7 @@ export default function Portfolio() {
       id: 3,
       image: Project3Img,
       title: 'SVG logo',
-      description: 'Description ofSVG logo Markernode application that generates an SVG logo with your choice of shape (circle, square, rectangle) and color text. Limit with 3 characters and text color. following chosen using color of keyword or hexadecimal numbers.',
+      description: 'Description of SVG logo Markernode application that generates an SVG logo with your choice of shape (circle, square, rectangle) and color text. Limit with 3 characters and text color. following chosen using color of keyword or hexadecimal numbers.',
       url: 'https://github.com/KittiyaLooknam/SVG-Logo-Maker.git'
     },
     {
@@ -78,31 +78,7 @@ export default function Portfolio() {
       title: 'Password-Generator',
       description: 'Description of This is the password generator for the user-defined length between 8-128 characters selected character types (uppercase, lowercase, numeric, and special). The password uses HTML to create the button to initiate password generation and prompts and confirms to select password parameters. After selection, the generated password is displayed in the browser window.',
       url: 'https://github.com/KittiyaLooknam/Password-Generator.git'
-    },
-    {
-      id: 8,
-      image: Project8Img,
-      title: 'Employee-Tracker',
-      description: 'Description of This is a Quiz game. The code writted using HTML, CSS and Bootstrap CSS framework, Javascript jQuery libaries, and font-awesome icon toolkit.',
-      url: 'https://github.com/KittiyaLooknam/Employee-Tracker.git'
-    },
-    {
-      id: 8,
-      image: Project8Img,
-      title: 'Employee-Tracker',
-      description: 'Description of This is a Quiz game. The code writted using HTML, CSS and Bootstrap CSS framework, Javascript jQuery libaries, and font-awesome icon toolkit.',
-      url: 'https://github.com/KittiyaLooknam/Employee-Tracker.git'
-    },
-    {
-      id: 8,
-      image: Project8Img,
-      title: 'Employee-Tracker',
-      description: 'Description of This is a Quiz game. The code writted using HTML, CSS and Bootstrap CSS framework, Javascript jQuery libaries, and font-awesome icon toolkit.',
-      url: 'https://github.com/KittiyaLooknam/Employee-Tracker.git'
-    },
-    
-
-
+    }
   ];
 
   const handleClick = (url) => {
@@ -118,13 +94,11 @@ export default function Portfolio() {
             Portfolio
           </FancyText>
       
-      <div className="grid-container">
+      <div className="project-grid">
         {projects.map(project => (
           <div key={project.id} className="project-card">
             <a href={project.url} target="_blank" rel="noopener noreferrer">
-              <div > 
-              <img className="imgprofoilo" id="imgprofoilo"src={project.image} alt={project.title} />
-              </div>
+              <img className="imgprofoilo" id="imgprofoilo" src={project.image} alt={project.title} />
             </a>
             <h3 style={{ color: 'blue' }}>{project.title}</h3>
             <p style={{ color: 'white' }}>{project.description}</p>
