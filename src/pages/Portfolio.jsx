@@ -9,6 +9,7 @@ import Project6Img from '../assets/workday-sceduler.png';
 import Project7Img from '../assets/Quiz-game-challenge.png';
 import Project8Img from '../assets/Social-Network-API.png';
 import Project9Img from '../assets/Employee-Tracker.png';
+import Project10Img from '../assets/Recipe cookbook.png';
 
 import '../style.css'; // Import the CSS file
 import FancyText from '@carefully-coded/react-text-gradient';
@@ -78,6 +79,13 @@ export default function Portfolio() {
       title: 'Password-Generator',
       description: 'Description of This is the password generator for the user-defined length between 8-128 characters selected character types (uppercase, lowercase, numeric, and special). The password uses HTML to create the button to initiate password generation and prompts and confirms to select password parameters. After selection, the generated password is displayed in the browser window.',
       url: 'https://github.com/KittiyaLooknam/Password-Generator.git'
+    },
+    {
+      id: 10,
+      image: Project10Img,
+      title: 'Cook Book Blog',
+      description: 'Description of This is project is a full stack web application buill using React, Node.js, Express, MongoDB, and Bootstrap. It is a blog application where users can create, read, update, and delete recipes.',
+      url: 'https://github.com/gpayabyab/cook-book-blog-.git'
     }
   ];
 
@@ -100,7 +108,7 @@ export default function Portfolio() {
             <a href={project.url} target="_blank" rel="noopener noreferrer">
               <img className="imgprofoilo" id="imgprofoilo" src={project.image} alt={project.title} />
             </a>
-            <h3 style={{ color: 'blue' }}>{project.title}</h3>
+            <h3 style={{ color: '#C70039' }}>{project.title}</h3>
             <p style={{ color: 'white' }}>{project.description}</p>
             <button onClick={() => handleClick(project.url)} className="view-button">View Repository</button>
           </div>

@@ -6,32 +6,32 @@ import FancyText from '@carefully-coded/react-text-gradient';
 export default function Home() {
   return (
     <div className="section" id="home" >
-      <div className="container">
-        <div className="col-md-6" id="imgwelcome" >
+      <div className="container"style={{ height: '100%', border: '1px solid rgba(0, 0, 0, 0.3)' }}>
+        <div className="col-md-6" id="imgwelcome"style={{ height: '100%', border: '1px solid rgba(0, 0, 0, 0.3)' }}>
           <img src={backgroundImage} alt="Aside" style={{ width: '70%', height: '70%' }} />
         </div>
         <div className="row">
-        <div className="col-md-6 text-left textcontaner" id="textcontaner1">
+          <div className="col-md-12 text-left textcontaner" id="textcontaner1">
             <FancyText
               gradient={{ from: '#F858E0', to: '#77156C', type: 'linear' }}
               animateTo={{ from: '#6DEDD0', to: '#7AE23A' }}
-              animateDuration={150} style={{ fontSize: '20px' }}>
-             I'm 
+              animateDuration={1500}
+              style={{ fontSize: '50px' }}
+            >
+              Welcome to my Portfolio
             </FancyText>
-            👋 <br></br>
-            <FancyText className='name' id="name"
-              gradient={{ from: '#F858E0', to: '#77156C', type: 'linear' }}
-              animateTo={{ from: '#6DEDD0', to: '#7AE23A' }}
-              animateDuration={2000}>
-           KITTIYA GOLDBERG
-            </FancyText>
+          
+            <p
+              className='name'
+              id="name">KITTIYA GOLDBERG</p>
             <FancyText
               gradient={{ from: '#F858E0', to: '#77156C', type: 'linear' }}
               animateTo={{ from: '#6DEDD0', to: '#7AE23A' }}
-              animateDuration={1500} style={{ fontSize: '20px' }}>
+              animateDuration={1500}
+              style={{ fontSize: '20px' }}
+            >
               Full Stack Developer
-            </FancyText >
-
+            </FancyText>
           </div>
         </div>
       </div>

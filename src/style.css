@@ -6,9 +6,12 @@
 }
 
 body {
-  background-color: #282c34;
+  background-color: #020202;
   color: white;
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
 }
 
 /* Container and Section Styling */
@@ -116,44 +119,64 @@ body {
   background-color: #ff69b4;
 }
 
-/* Footer Container Styling */
-.formcontainer {
-  background-color: #282c34;
-  padding: 20px;
+/* Ensure the body and html take up full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Make the main container take up all available space */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes up the full viewport height */
+}
+
+/* Style the main content to take up the remaining space */
+main {
+  flex: 1;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #333;
   color: white;
-  border-top: 1px solid #ffffff;
   text-align: center;
-  margin-top: 40px;
+  padding: 10px 0;
+  border-top: 1px solid white;
+}
+
+/* Style for the footer icons */
+.icons {
+  display: flex;
+  justify-content: space-around; /* Arrange items in a row with space between */
+  align-items: center; /* Align items vertically */
+  padding: 10px;
 }
 
 .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 10px;
 }
 
 .icon a {
   color: white;
   text-decoration: none;
-  transition: transform 0.2s ease;
 }
 
 .icon a:hover {
-  transform: scale(1.1);
-}
-
-.footer {
-  padding-top: 10px;
-  margin-top: 30px;
+  color: #ddd;
 }
 
 .container-ft {
-  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Contact Container Styling */
 .contact {
-  padding: 50px 0;
+  padding: 250px 0;
   background-color: #282c34;
 }
 
@@ -226,4 +249,18 @@ button:hover {
 
 #email-button:hover {
   background-color: #138496;
+}
+
+/* PDF Viewer Styling */
+.pdf-viewer-container {
+  height: 100vh; /* Ensure the PDF viewer takes up the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Optional background color */
+}
+
+.pdf-viewer {
+  max-width: 100%;
+  height: auto;
 }
