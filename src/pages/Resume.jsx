@@ -8,7 +8,7 @@ import resumeFile from '../assets/Resume.pdf';
 const Resume = () => {
   return (
     <div>
-      <h1>My Resume</h1>
+      <h1 class=" content1">My Resume</h1>
       <div style={{ height: '100%', border: '1px solid rgba(0, 0, 0, 0.3)' }}>
         <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
           <Viewer fileUrl={resumeFile} />

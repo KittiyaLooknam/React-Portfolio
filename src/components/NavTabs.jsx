@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'; // eslint-disable-line no-unused-vars
+import '../style.css'; // Import the CSS file
 
 function NavTabs() {
   const currentPage = useLocation().pathname;

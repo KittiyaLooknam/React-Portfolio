@@ -22,11 +22,11 @@ function Footer() {
             </a>
           </div>
           <br />
-          <div className='icon3'>
+          {/* <div className='icon3'>
             <a href="mailto:kittiya.goldberg1@gmail.com">
               <FontAwesomeIcon icon={faEnvelope} className="mr-2" size="2x" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="container-ft">
