@@ -21,8 +21,8 @@ export default function About() {
             in the USA, I had the pleasure of working in child care until 2023. I've always had a passion for
             fashion and design! After watching a few web development tutorials on YouTube, I became interested
             in learning. I've recently completed the George Washington University coding bootcamp program in
-            Full Stack Web Development. I've designed a wide range of websites and applications using HTML,
-            CSS, JavaScript, React, Node.js, Express.js, and MongoDB. <br></br>
+            Full Stack Web Development. I've designed a wide range of websites and applications using JavaScript ES6+, HTML5, CSS3, React, Node, Handlebars, Express, Bootstrap, SQL, MySQL, No SQL, MongoDB, Mongoose, jQuery,
+            Git/ GitHub, Visual Studio Code, Docker, Post Man, RESTful APIs, Heroku, Microsoft office, Slack. <br></br>
             <h5 class= "indent1">My goal now is to land a job as a web developer.
             I embrace the challenge of learning new things and apply myself when new opportunities to grow arise.
             As a person, I'm diligent and I'm always looking for ways to improve my skills and knowledge. I adapt
