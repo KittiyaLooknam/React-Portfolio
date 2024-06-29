@@ -116,12 +116,19 @@ body {
 /* Paragraph Styling */
 #container-main1 p,
 .project-card p {
-  font-size: 20px;
+  font-size: 18px;
   text-indent: 25px;
   line-height: 1.6;
   text-align: justify;
 }
 
+#tools-used{
+  font-size: 20px;
+  text-indent: 25px;
+  line-height: 1.6;
+  text-align: justify;
+ 
+}
 /* Project Grid and Card Styling */
 .project-grid {
   display: flex;
@@ -147,8 +154,15 @@ body {
 }
 
 .project-card h3 {
-  color: #00bfff;
+  color: #00ff59;
   margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Added gap between buttons */
 }
 
 .view-button {

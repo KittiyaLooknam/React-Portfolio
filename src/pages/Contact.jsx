@@ -67,6 +67,8 @@ export default function Contact() {
         <FancyText gradient={{ from: 'white', to: 'orange', type: 'linear' }} style={{ fontSize: '25px' }}>
           Contact Me
         </FancyText>
+        <h4 style={{ color: 'white', marginTop: '20px' }}>Email: Kittiya.goldberg1@gmail.com</h4>
+
         <form id='contact-form' onSubmit={handleSubmit}>
           <label htmlFor='name' style={{ color: 'white' }}>Name:</label>
           <input
@@ -77,6 +79,7 @@ export default function Contact() {
             onChange={handleChange}
             required
           />
+          <br />
           <label htmlFor='email' style={{ color: 'white' }}>Email:</label>
           <input
             type='email'
@@ -86,6 +89,7 @@ export default function Contact() {
             onChange={handleChange}
             required
           />
+          <br />
           <label htmlFor='message' style={{ color: 'white' }}>Message:</label>
           <textarea
             id='message'
@@ -94,6 +98,7 @@ export default function Contact() {
             onChange={handleChange}
             required
           />
+          <br />
           <button type='submit' className='btn btn-primary bg-info rounded border-info ml-1 mb-3' id='email-button'>Submit</button>
         </form>
       </section>
