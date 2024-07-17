@@ -41,10 +41,13 @@ export default function Home() {
             About me
           </FancyText>
           <p className="indent1">
-            My name is <b> Kittiya Goldberg</b> I earned my degree in Fisheries Science in 2012 and worked in Thailand for 2 years before moving to the USA as an Au Pair in 2014. Since being in the USA, I had the pleasure of working in child care until 2023. I've always had a passion for fashion and design! After watching a few web development tutorials on YouTube, I became interested in learning. I've recently completed the George Washington University coding bootcamp program in Full Stack Web Development. I've designed a wide range of websites and applications using JavaScript ES6+, HTML5, CSS3, React, Node, Handlebars, Express, Bootstrap, SQL, MySQL, NoSQL, MongoDB, Mongoose, jQuery, Git/GitHub, Visual Studio Code, Docker, Postman, RESTful APIs, Heroku, Microsoft Office, and Slack.
+            My name is <b> Kittiya Goldberg</b>  I hold a degree in Fisheries Science, earned in 2012, and have six years of professional experience in Thailand before relocating to the United States. My early career focused on workforce management, but in 2015, I transitioned to web development. After taking time off to raise three children, I recently completed the George Washington University Coding Bootcamp program in Full Stack Web Development.
           </p>
           <p className="indent1">
-            My goal now is to land a job as a web developer. I embrace the challenge of learning new things and apply myself when new opportunities to grow arise. As a person, I'm diligent and always looking for ways to improve my skills and knowledge. I adapt quickly and work well in both group and individual settings. I consider myself a team player that will give extra effort to set an example for others to follow.
+            During my training, I developed a broad skill set, including proficiency in JavaScript ES6+, HTML5, CSS3, React, Node.js, Handlebars, Express, Bootstrap, SQL, MySQL, NoSQL, MongoDB, Mongoose, jQuery, Git/GitHub, Visual Studio Code, Docker, Postman, RESTful APIs, Heroku, Microsoft Office, and Slack. I have successfully designed and implemented a variety of websites and applications.
+          </p>
+          <p className="indent1">
+          I am now seeking a web developer position where I can leverage my skills and experience. I am dedicated to continuous learning and professional growth, and I thrive on new challenges. My work style is characterized by diligence, adaptability, and a collaborative spirit. I am a team player who consistently strives to set a high standard and inspire others.
           </p>
         </div>
       </div>
